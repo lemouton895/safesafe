@@ -283,7 +283,7 @@ void login(Request &req, Response &res) {
   sha256.write(password);
   const char* hash = hexHash(sha256.result()).c_str();
 
-  if (strcmp(hash, "85c4b594e5d54450ce1c24ecde0e5844a6fb2132c6248f68dfeeffd07f6b8748") == 0) {
+  if (strcmp(hash, "a78a9d321ba0c6f8039ce9063481a32d62b2929ed294a13265a290769e099705") == 0) {
     UUID token;
     strcpy(accessToken, token.toCharArray());
 
